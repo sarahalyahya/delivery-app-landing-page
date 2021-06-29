@@ -1,0 +1,15 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Fira Sans", Arial, Helvetica, sans-serif;
+  font-family: "Heebo", Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --dark-gray: #676f73;
+  --peach: #e8505b;
+  --black: #263238;
+  --orange: #e96a20;
+}
