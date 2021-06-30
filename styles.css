@@ -2,14 +2,31 @@ html {
   font-size: 62.5%;
 }
 
-body {
-  font-family: "Fira Sans", Arial, Helvetica, sans-serif;
-  font-family: "Heebo", Arial, Helvetica, sans-serif;
-}
-
 :root {
   --dark-gray: #676f73;
   --peach: #e8505b;
   --black: #263238;
   --orange: #e96a20;
+}
+
+/* Typography */
+body {
+  font-family: "Fira Sans", Arial, Helvetica, sans-serif;
+  font-family: "Heebo", Arial, Helvetica, sans-serif;
+  color: var(--dark-gray);
+  font-size: 1.5rem;
+}
+
+/* Rating */
+
+.stars {
+  display: inline-block;
+}
+
+.fa-star {
+  margin: 0 0.4rem;
+}
+
+.stars--checked {
+  color: var(--orange);
 }
