@@ -90,25 +90,16 @@ p {
     font-size: 2rem;
   }
 }
+/* Grids */
 
-/* Rating */
-
-.rating {
-  display: inline-block;
+.grid {
+  display: grid;
 }
 
-.fa-star {
-  margin: 0 0.4rem;
-}
-
-.rating--checked {
-  color: var(--orange);
-}
-
-.rating--about-us {
-  font-size: 2.35rem;
-  display: inline-block;
-  margin-right: 1.5rem;
+@media screen and (min-width: 768px) {
+  .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* Buttons */
@@ -116,10 +107,10 @@ p {
   border-radius: 8px;
   border: 0;
   cursor: pointer;
-  font-size: 1.75rem;
-  margin: 1rem 0;
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
   outline: 0;
-  padding: 2rem 4rem;
+  padding: 1.5rem 3rem;
   text-align: center;
   white-space: normal;
   max-width: 20rem;
@@ -163,16 +154,13 @@ p {
 
 a {
   text-decoration: none;
+  display: inline-block;
 }
 /* Icons */
 .fas {
   width: 2rem;
   height: 2rem;
   font-size: 2.35rem;
-}
-.nav__icon,
-.fa-rotate-90 {
-  transition: all 0.5s;
 }
 
 /* Collapsibles */
@@ -239,6 +227,9 @@ a {
   color: var(--dark-gray);
 }
 
+.nav__item:last-child {
+  margin-bottom: 3rem;
+}
 .nav__icon {
   cursor: pointer;
   color: var(--black);
@@ -246,7 +237,10 @@ a {
   margin-top: -0.5rem;
   transition: all 0.3s;
 }
-
+.nav__icon,
+.fa-rotate-90 {
+  transition: all 0.5s;
+}
 .collapsible--expanded .nav__icon {
   opacity: 1;
   color: var(--black);
@@ -268,4 +262,41 @@ a {
   .nav__item > a {
     font-size: 1.5rem;
   }
+}
+
+/* Hero */
+
+.hero__img {
+  margin-top: 4rem;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__img {
+    margin-top: 0;
+  }
+  .hero__content {
+    align-self: center;
+    width: 75%;
+  }
+}
+
+/* Rating */
+
+.rating {
+  display: inline-block;
+}
+
+.fa-star {
+  margin: 0 0.4rem;
+}
+
+.rating--checked {
+  color: var(--orange);
+}
+
+.rating--about-us {
+  font-size: 2.35rem;
+  display: inline-block;
+  margin-right: 1.5rem;
 }
