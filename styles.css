@@ -153,3 +153,39 @@ p {
 .black-test {
   background-color: var(--black);
 }
+
+/* Links */
+
+a {
+  text-decoration: none;
+}
+/* Icons */
+.fas {
+  width: 2rem;
+  height: 2rem;
+  font-size: 2.35rem;
+}
+
+/* Collapsibles */
+
+.collapsible__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collapsible__header .fas {
+  margin-top: 1.5rem;
+  cursor: pointer;
+}
+
+.collapsible__content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+  opacity: 1;
+}
