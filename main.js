@@ -5,7 +5,7 @@ collapsibles.forEach((item) =>
   })
 );
 
-const collapsibleIcon = document.querySelectorAll(".collapsible--icon");
+const collapsibleIcon = document.querySelectorAll(".nav__icon");
 collapsibleIcon.forEach((item) =>
   item.addEventListener("click", function(){
     this.classList.toggle("fa-rotate-90")
