@@ -21,7 +21,7 @@ html {
 body {
   color: var(--dark-gray);
   font-family: "Heebo", Arial, Helvetica, sans-serif;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   margin: 0 1.5rem;
 }
 
@@ -50,19 +50,18 @@ h1 {
 }
 
 h2 {
-  font-size: 2.5rem;
-  font-weight: 500;
+  font-size: 1.75rem;
   color: var(--peach);
 }
 
 h3 {
-  font-size: 3.5rem;
+  font-size: 2.75rem;
   font-weight: 700;
-  margin-bottom: 2.5rem;
+  margin-bottom: 5rem;
 }
 
 h4 {
-  font-size: 3rem;
+  font-size: 2.75rem;
   font-weight: 700;
 }
 p {
@@ -268,14 +267,12 @@ a {
 
 .hero__img {
   margin-top: 4rem;
+  margin-bottom: 7rem;
   width: 100%;
 }
 
 .hero__shape {
   display: none;
-}
-.hero__content {
-  margin-left: 5rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -292,6 +289,9 @@ a {
   .hero {
     position: relative;
   }
+  .hero__content {
+    margin-left: 5rem;
+  }
 
   .hero__shape {
     display: inline-block;
@@ -301,6 +301,21 @@ a {
     bottom: 0;
     z-index: -5;
   }
+}
+
+/* Services */
+.services__header {
+  text-align: center;
+}
+
+.services__content {
+  text-align: left;
+}
+
+.services__img {
+  width: 10rem;
+  height: 10rem;
+  margin-bottom: 2rem;
 }
 
 /* Rating */
