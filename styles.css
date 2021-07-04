@@ -16,6 +16,10 @@ html {
   margin: 0 auto;
 }
 
+.block {
+  margin-bottom: 9rem;
+}
+
 /* Typography */
 
 body {
@@ -74,7 +78,7 @@ h5 {
 }
 
 h6 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 700;
 }
 p {
@@ -284,7 +288,6 @@ a {
 
 .hero__img {
   margin-top: 4rem;
-  margin-bottom: 7rem;
   width: 100%;
 }
 
@@ -344,28 +347,40 @@ a {
 }
 
 /* About */
+
 .about__img {
-  margin-top: 4rem;
   margin-bottom: 3.5rem;
   width: 100%;
 }
 .vertical-line {
-  border-left: 2px solid white;
-  height: 3rem;
+  border-right: 2px solid white;
+  height: 6rem;
+  padding: 1rem 0;
 }
+
 .about__stats-block {
+  width: 80%;
   background-color: var(--peach);
-  border-radius: 8px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-}
-
-h5 .about__stats-block,
-h6 .about__stats-block {
   color: white;
+  border-radius: 5px;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+.about__stats-block h5,
+.about__stats-block h6 {
+  color: white;
+  margin-bottom: 1rem;
+}
+.about__stats-block span {
+  padding: 0.35rem 0.75rem;
 }
 
+@media screen and (min-width: 768px) {
+  .about__content {
+    margin-left: 6rem;
+  }
+}
 /* Rating */
 
 .rating {
