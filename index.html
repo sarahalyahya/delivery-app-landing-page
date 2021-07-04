@@ -33,32 +33,36 @@
       </ul>
     </nav>
     <!-- Hero -->
-    <section class="block hero">
-      <div class="grid grid--1x2 container">
-        <header class="hero__content">
-          <h1 class="hero__tagline">
-            <span class="type--accented">Home Delivery</span> From Stores Near
-            You
-          </h1>
-          <p class="hero__description">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Voluptatibus, eos quas eaque ipsam aspernatur sunt vitae,
-            accusantium ducimus similique quod explicabo quidem magnam non rem.
-          </p>
-          <a href="#" class="btn btn--peach">Download App</a>
-        </header>
-        <img class="hero__img" src="svgs/hero-img.svg" alt="" />
-        <img src="svgs/hero-shape.svg" alt="" class="hero__shape" />
+    <section class="hero">
+      <div class="container">
+        <div class="hero-wrapper">
+          <div class="hero__header">
+            <h1 class="hero__tagline">
+              <span class="type--accented">Home Delivery</span> From Stores Near
+              You
+            </h1>
+            <p class="hero__description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Voluptatibus, eos quas eaque ipsam aspernatur sunt vitae,
+              accusantium ducimus similique quod explicabo quidem magnam non
+              rem.
+            </p>
+            <a href="#" class="btn btn--peach">Download App</a>
+          </div>
+          <div class="hero__img">
+            <img src="svgs/hero-img.svg" />
+          </div>
+        </div>
       </div>
     </section>
     <!-- Delivery Services -->
-    <section class="block services">
+    <section class="mb-9 services container">
       <div class="container">
         <header class="services__header">
           <h2>Delivery Services</h2>
           <h3>All Essentials You Need</h3>
         </header>
-        <div class="container grid grid--2x3 services__content">
+        <div class="grid grid--2x3 services__content">
           <div class="services__service">
             <svg class="services__img">
               <use xlink:href="images/sprite.svg#service-food"></use>
@@ -126,10 +130,10 @@
       </div>
     </section>
     <!-- About -->
-    <section class="block about">
+    <section class="mb-9 about">
       <div class="container grid grid--1x2">
         <img src="svgs/about-img.svg" alt="" class="about__img" />
-        <div class="about__content">
+        <div class="    ">
           <h2>About Us</h2>
           <h3>On-time Delivery and Customer Satisfaction</h3>
           <p>
@@ -147,21 +151,45 @@
               <i class="fas fa-star fa-sm rating--checked"></i>
             </div>
           </div>
-          <div class="about__stats-block">
-            <span>
-              <h5>1M+</h5>
-              <h6>Downloads</h6>
-            </span>
+          <!-- <div class="about__stats-block">
+            <div class="about__stats-block--item">
+              <span class="stats-item">
+                <h5>1M+</h5>
+                <h6>Downloads</h6>
+              </span>
+              <div class="line"></div>
+            </div>
+            <div class="about__stats-block--item">
+              <span class="stats-item">
+                  <h5>234K+</h5>
+                  <h6>Happy Users</h6>
+              </span>
+              <div class="line"></div>
+            </div>
 
-            <span>
-              <h5>234K+</h5>
-              <h6>Happy Users</h6>
-            </span>
+            <div class="about__stats-block--item">
+              <span class="stats-item">
+                  <h5>34K+</h5>
+                  <h6>Reviews</h6>
+              </span>
+            </div>
+          </div> -->
 
-            <span>
-              <h5>34K+</h5>
-              <h6>Reviews</h6>
-            </span>
+          <div class="about-box">
+            <div class="about-content">
+              <h5 class="text-white m-0">1M+</h5>
+              <h6 class="text-white m-0">Download</h6>
+            </div>
+            <div class="line"></div>
+            <div class="about-content">
+              <h5 class="text-white m-0">1M+</h5>
+              <h6 class="text-white m-0">Download</h6>
+            </div>
+            <div class="line"></div>
+            <div class="about-content">
+              <h5 class="text-white m-0">1M+</h5>
+              <h6 class="text-white m-0">Download</h6>
+            </div>
           </div>
         </div>
       </div>
