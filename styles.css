@@ -28,7 +28,9 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
   font-family: "Fira Sans", Arial, Helvetica, sans-serif;
   margin-top: 1rem;
   margin-bottom: 2.35rem;
@@ -36,7 +38,9 @@ h4 {
 
 h1,
 h3,
-h4 {
+h4,
+h5,
+h6 {
   color: var(--black);
 }
 
@@ -61,6 +65,16 @@ h3 {
 
 h4 {
   font-size: 2.75rem;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h6 {
+  font-size: 1.5rem;
   font-weight: 700;
 }
 p {
@@ -162,7 +176,6 @@ a {
 .fas {
   width: 2rem;
   height: 2rem;
-  font-size: 2.35rem;
 }
 
 /* Collapsibles */
@@ -174,6 +187,7 @@ a {
 
 .collapsible__header .fas {
   margin-top: 1.5rem;
+  font-size: 2.35rem;
   cursor: pointer;
 }
 
@@ -329,14 +343,41 @@ a {
   }
 }
 
+/* About */
+.about__img {
+  margin-top: 4rem;
+  margin-bottom: 3.5rem;
+  width: 100%;
+}
+.vertical-line {
+  border-left: 2px solid white;
+  height: 3rem;
+}
+.about__stats-block {
+  background-color: var(--peach);
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+h5 .about__stats-block,
+h6 .about__stats-block {
+  color: white;
+}
+
 /* Rating */
 
 .rating {
-  display: inline-block;
+  display: flex;
 }
 
+.rating__star-group {
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+}
 .fa-star {
-  margin: 0 0.4rem;
+  margin: 0 -0.2rem;
 }
 
 .rating--checked {
@@ -344,7 +385,6 @@ a {
 }
 
 .rating--about-us {
-  font-size: 2.35rem;
-  display: inline-block;
+  /* font-size: 2.35rem; */
   margin-right: 1.5rem;
 }
