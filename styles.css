@@ -271,13 +271,35 @@ a {
   width: 100%;
 }
 
+.hero__shape {
+  display: none;
+}
+.hero__content {
+  margin-left: 5rem;
+}
+
 @media screen and (min-width: 768px) {
   .hero__img {
     margin-top: 0;
   }
   .hero__content {
     align-self: center;
-    width: 75%;
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    position: relative;
+  }
+
+  .hero__shape {
+    display: inline-block;
+    position: absolute;
+    left: -6%;
+    width: 18%;
+    bottom: 0;
+    z-index: -5;
   }
 }
 
