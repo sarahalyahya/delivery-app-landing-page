@@ -20,7 +20,7 @@ body {
 .container {
   max-width: 1140px;
   margin: 0 auto;
-  padding: 10px;
+  padding: 1rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -100,7 +100,7 @@ p {
 }
 @media screen and (min-width: 1024px) {
   body {
-    font-size: 1.35rem;
+    font-size: 1.5rem;
   }
   h1 {
     font-size: 3.5rem;
@@ -127,6 +127,7 @@ p {
 @media screen and (min-width: 768px) {
   .grid--1x2 {
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
   }
   .grid--2x3 {
     grid-template-columns: repeat(3, 1fr);
@@ -176,10 +177,6 @@ p {
   width: 2rem;
   height: 2rem;
   margin-right: 1rem;
-}
-
-.black-test {
-  background-color: var(--black);
 }
 
 /* Links */
@@ -373,9 +370,13 @@ a {
   background-color: var(--peach);
   border-radius: 5px;
   padding: 1rem 4.2rem;
-  width: 60%;
 }
 
+/* @media screen and (min-width: 768px) {
+  .about__element:nth-of-type(even) .about__content {
+    order: 2;
+  } */
+/* } */
 @media screen and (min-width: 1024px) {
   .about__box .line {
     background-color: white;
@@ -404,4 +405,74 @@ a {
 
 .rating--about-us {
   margin-right: 1.5rem;
+}
+
+/* Testimonials */
+.testimonial__header {
+  text-align: center;
+}
+
+.testimonial__cards {
+  justify-items: center;
+  align-items: center;
+}
+.card {
+  border: 2px solid rgba(192, 192, 192, 0.35);
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  margin: 1rem 0rem;
+  max-width: 27rem;
+}
+
+.testimonial__stars {
+  margin-right: 1rem;
+  font-size: 1rem;
+}
+
+.card__header {
+  margin-bottom: 2rem;
+}
+
+.card__footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.testimonial__img {
+  border-radius: 50%;
+  align-self: center;
+  margin-right: 1.5rem;
+}
+
+.testimonial__author {
+  margin-bottom: 0.2rem;
+  font-size: 1.65rem;
+}
+
+.testimonial__job {
+  font-size: 1.3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .card:nth-of-type(1) {
+    transform: translateY(-2.5rem);
+  }
+  .card:nth-of-type(2) {
+    transform: translateY(-5.5rem);
+  }
+  .card:nth-of-type(3) {
+    transform: translateY(1rem);
+  }
+  .testimonial__cards {
+    position: relative;
+  }
+  .card:nth-of-type(4) {
+    transform: translateY(-2.5rem);
+  }
+  .card:nth-of-type(5) {
+    transform: translateY(-5.5rem);
+  }
+  .card:nth-of-type(6) {
+    transform: translateY(1rem);
+  }
 }
