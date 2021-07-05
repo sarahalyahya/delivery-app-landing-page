@@ -543,6 +543,7 @@ a {
   margin-bottom: 3rem;
 }
 .footer__list li {
+  color: rgb(165, 165, 165);
   font-size: 1.25rem;
   margin-bottom: 1rem;
   cursor: pointer;
