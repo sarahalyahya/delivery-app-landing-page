@@ -120,11 +120,14 @@ p {
   display: grid;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .grid--1x2 {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 3rem;
   }
+}
+
+@media screen and (min-width: 1024px) {
   .grid--2x3 {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -304,7 +307,7 @@ a {
   justify-content: space-between;
   flex-direction: column;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .hero-wrapper {
     flex-direction: row;
   }
@@ -354,7 +357,7 @@ a {
   margin-bottom: 1.5rem;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .services__service {
     width: 60%;
   }
@@ -472,7 +475,7 @@ a {
   font-size: 1.3rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .card:nth-of-type(1) {
     transform: translateY(-2.5rem);
   }
